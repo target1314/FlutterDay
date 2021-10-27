@@ -2,15 +2,19 @@ import 'package:flutter/material.dart';
 import '../view/FirstPageState.dart';
 import '../view/SecondPageState.dart';
 import '../view/ThirdPageState.dart';
-
-void main() => runApp(new MyApp());
+import '../list/GridList.dart';
 
 class MyApp extends StatefulWidget {
+  var parentContext;
   @override
-  _MyHomePageState createState() => new _MyHomePageState();
+  _MyHomePageState createState() => new _MyHomePageState(this.parentContext);
 }
 
 class _MyHomePageState extends State<MyApp> with TickerProviderStateMixin {
+
+  var parentContext;
+  _MyHomePageState(this.parentContext);
+
   int _tabIndex = 0;
 
   List<BottomNavigationBarItem> _navigationViews;

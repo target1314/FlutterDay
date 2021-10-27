@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../list/GridList.dart';
 
 class ThirdPageState extends StatefulWidget {
   @override
@@ -9,9 +10,7 @@ class ThirdPage extends State<ThirdPageState> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      body: new Center(
-        child: new Text('这是第三个界面'),
-      ),
+      body: MyHomePage(),
     );
   }
 }
