@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:untitled/info/photo.dart';
+import 'package:xc/info/photo.dart';
 
 class DetailPage extends StatelessWidget {
 

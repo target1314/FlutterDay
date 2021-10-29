@@ -1,4 +1,4 @@
-name: untitled
+name: xc
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -71,3 +71,85 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+    # 要向应用程序添加资产，请添加资产部分，如下所示：
+    # assets:
+    #  - images/a_dot_burr.jpeg
+    #  - images/a_dot_ham.jpeg
+  assets:
+      - assets/navigation_home.png
+      - assets/navigation_home_selected.png
+      - assets/navigation_classify.png
+      - assets/navigation_classify_selected.png
+      - assets/navigation_society.png
+      - assets/navigation_society_selected.png
+      - assets/navigation_earnings.png
+      - assets/navigation_earnings_selected.png
+      - assets/navigation_my.png
+      - assets/navigation_my_selected.png
+      - assets/app_bar_more.png
+      - assets/app_bar_service.png
+      - assets/app_bar_scan.png
+      - assets/app_bar_service_angle.png
+      - assets/app_bar_plate_1.png
+      - assets/app_bar_plate_2.png
+      - assets/app_bar_plate_3.png
+      - assets/featured_headlines_title.png
+      - assets/home_porcelain_backplane_1.png
+      - assets/home_porcelain_backplane_2.png
+      - assets/home_porcelain_backplane_3.png
+      - assets/home_porcelain_backplane_4.png
+      - assets/hot_list_sign.png
+      - assets/home_roll_backplane.png
+      - assets/recommend_you_title.png
+      - assets/recommended_volume.png
+      - assets/recommended_volume_2.png
+      - assets/recommended_volume_3.png
+      - assets/app_bar_scan_gray.png
+      - assets/app_bar_service_gray.png
+      - assets/community_title.png
+      - assets/community_sharing.png
+      - assets/community_label.png
+      - assets/income_bottom_plate.png
+      - assets/my_backboard.png
+      - assets/my_message.png
+      - assets/my_income.png
+      - assets/my_order.png
+      - assets/my_fans.png
+      - assets/my_invitation.png
+      - assets/my_common_corner.png
+      - assets/my_newbie_guide.png
+      - assets/my_yue_collection.png
+      - assets/my_official_announcement.png
+      - assets/my_feedback.png
+      - assets/my_about_us.png
+      - assets/my_settings.png
+      - assets/super_member_logo.png
+      - assets/choose_my_order.png
+      - assets/choose_subordinate_order.png
+      - assets/my_order_rectangle.png
+      - assets/details_share_gradient.png
+      - assets/details_coupon_gradient.png
+      - assets/details_discount_gradient.png
+      - assets/details_white_back.png
+      - assets/details_white_collection.png
+      - assets/details_white_more.png
+      - assets/details_black_back.png
+      - assets/details_black_collection.png
+      - assets/details_black_more.png
+      - assets/limited_bar_plate_1.png
+      - assets/limited_bar_plate_2.png
+      - assets/limited_bar_title.png
+      - assets/limited_estimated_price.png
+      - assets/flash_bar_plate_1.png
+      - assets/flash_bar_plate_2.png
+      - assets/flash_bar_title.png
+      - assets/flash_bar_more.png
+      - assets/flash_featured_brand.png
+      - assets/brand_discount_bottom_plate.png
+      - assets/platform_taobao_identifier.png
+      - assets/platform_tmall_identifier.png
+      - assets/landing_phone.png
+      - assets/login_verification_code.png
+      - assets/white_placeholder.png
+      - assets/error503.png
+      - assets/refresh.gif

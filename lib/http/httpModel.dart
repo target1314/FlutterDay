@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import "package:http/http.dart" as http;
-import 'package:untitled/info/photo.dart';
+import 'package:xc/info/photo.dart';
 
 Future<List<Photo>> fetchPhotos(http.Client client) async {
   final response =

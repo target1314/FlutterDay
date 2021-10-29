@@ -6,20 +6,21 @@ import '../list/GridList.dart';
 
 class MyApp extends StatefulWidget {
   var parentContext;
+
   @override
   _MyHomePageState createState() => new _MyHomePageState(this.parentContext);
 }
 
 class _MyHomePageState extends State<MyApp> with TickerProviderStateMixin {
-
   var parentContext;
+
   _MyHomePageState(this.parentContext);
 
   int _tabIndex = 0;
 
   List<BottomNavigationBarItem> _navigationViews;
 
-  var appBarTitles = ['首页', '发现', '我的'];
+  var appBarTitles = ['首页', '分类', '社区', '收益', '我的'];
 
   PageController pageController;
 
@@ -30,6 +31,8 @@ class _MyHomePageState extends State<MyApp> with TickerProviderStateMixin {
       children: <Widget>[
         new FirstPageState(),
         new SecondPageState(),
+        new ThirdPageState(),
+        new ThirdPageState(),
         new ThirdPageState()
       ],
       index: _tabIndex,
@@ -41,22 +44,70 @@ class _MyHomePageState extends State<MyApp> with TickerProviderStateMixin {
     super.initState();
     _navigationViews = <BottomNavigationBarItem>[
       new BottomNavigationBarItem(
-        icon: const Icon(Icons.home),
+        icon: Image.asset(
+          'assets/navigation_home.png',
+          height: 22,
+        ),
+        activeIcon: Image.asset(
+          'assets/navigation_home_selected.png',
+          height: 22,
+        ),
+
         // ignore: deprecated_member_use
         title: new Text(appBarTitles[0]),
-        backgroundColor: Colors.blue,
+        backgroundColor:  Color(0xffFE7C30),
       ),
       new BottomNavigationBarItem(
-        icon: const Icon(Icons.widgets),
+        icon: Image.asset(
+          'assets/navigation_home.png',
+          height: 22,
+        ),
+        activeIcon: Image.asset(
+          'assets/navigation_classify_selected.png',
+          height: 22,
+        ),
         // ignore: deprecated_member_use
         title: new Text(appBarTitles[1]),
-        backgroundColor: Colors.blue,
+        backgroundColor:  Color(0xffFE7C30),
       ),
       new BottomNavigationBarItem(
-        icon: const Icon(Icons.person),
+        icon: Image.asset(
+          'assets/navigation_society.png',
+          height: 22,
+        ),
+        activeIcon: Image.asset(
+          'assets/navigation_society_selected.png',
+          height: 22,
+        ),
         // ignore: deprecated_member_use
         title: new Text(appBarTitles[2]),
-        backgroundColor: Colors.blue,
+        backgroundColor:  Color(0xffFE7C30),
+      ),
+      new BottomNavigationBarItem(
+        icon: Image.asset(
+          'assets/navigation_earnings.png',
+          height: 22,
+        ),
+        activeIcon: Image.asset(
+          'assets/navigation_earnings_selected.png',
+          height: 22,
+        ),
+        // ignore: deprecated_member_use
+        title: new Text(appBarTitles[3]),
+        backgroundColor:  Color(0xffFE7C30),
+      ),
+      new BottomNavigationBarItem(
+        icon: Image.asset(
+          'assets/navigation_my.png',
+          height: 22,
+        ),
+        activeIcon: Image.asset(
+          'assets/navigation_my_selected.png',
+          height: 22,
+        ),
+        // ignore: deprecated_member_use
+        title: new Text(appBarTitles[4]),
+        backgroundColor:  Color(0xffFE7C30),
       ),
     ];
   }
@@ -69,7 +120,7 @@ class _MyHomePageState extends State<MyApp> with TickerProviderStateMixin {
 
     return new MaterialApp(
       navigatorKey: navigatorKey,
-      theme: new ThemeData(primaryColor: Colors.blue, accentColor: Colors.blue),
+      theme: new ThemeData(primaryColor:  Color(0xffFE7C30), accentColor:  Color(0xffFE7C30)),
       home: new Scaffold(
         appBar: new AppBar(
           title: new Text(
